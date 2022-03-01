@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+:root {
+  --amarelo: #ffcd1d;
+  --azul: #152b70;
+  --preto: #000;
+  --branco: #fff;
+
+  /* TEXT SIZE */
+  --first: 4.5rem;
+  --second: 3rem;
+  --med: 2.25rem;
+  --sec-med: 2rem;
+  --third: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== RESET ===== */
+
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* ===== LAYOUT ===== */
+
+.divider {
+  height: 1px;
+  margin: 1.25rem 6.25rem;
+  background: var(--preto);
+}
+
+.container {
+  margin: 0 6.25rem;
+  padding: 1.25rem 0;
+}
+
+/* ===== SIDEBAR ===== */
+
+#nav {
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background: var(--preto);
+  /* opacity: 0; */
+}
+
+#nav nav {
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; */
+  text-align: center;
+  padding: 1rem;
+}
+#nav ul {
+  display: grid;
+  gap: 2rem;
+}
+#nav nav a {
+  display: block;
+  color: white;
+  padding: 15px;
+  font-size: var(--third);
+  border: 2px solid var(--branco);
+}
+
+.sociais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#nav .socials {
+  display: inline-block;
+  border: none;
+}
+
+/* ===== SECTION CONTENT ===== */
+
+#content {
+  margin-left: 320px;
+  /* background: #ccc; */
+}
+.top-msg {
+  background: var(--preto);
+  color: white;
+}
+.top-msg p {
+  padding: 0.56rem;
+  text-align: center;
+  font-weight: bold;
+}
+.top-msg strong {
+  color: var(--amarelo);
+}
+
+/* ===== HEADER ===== */
+
+#hd-ctn {
+  background: var(--branco);
+}
+#hd-ctn .container {
+  border-bottom: 1px solid var(--preto);
+}
+#hd-ctn h1 {
+  font-family: Roboto-bold;
+  font-size: var(--first);
+}
+#hd-ctn h3 {
+  font-size: var(--sec-med);
+  font-family: Roboto-thinitalic;
+  font-weight: normal;
+}
+
+/* ===== ABOUT US ===== */
+
+#about-us {
+  background: var(--branco);
+}
+
+#about-us .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about-text {
+  background: black;
+  padding: 5rem 1.375rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.about-text h4,
+.about-text p,
+.about-text a {
+  font-size: var(--third);
+  font-family: roboto-thinitalic;
+  color: var(--branco);
+}
+.about-text a {
+  width: 153px;
+  border: 1px solid var(--branco);
+  padding: 0.5rem 1.2rem;
+}
+
+/* ===== COMO FUNCIONA ===== */
+
+#how {
+  background: var(--branco);
+}
+#how .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.how-text h4,
+.how-text p {
+  font-size: var(--third);
+  font-family: roboto-thinitalic;
+}
+
+/* ===== NOSSO OBJETIVO ===== */
+
+#objetivo {
+  /* height: 528px; */
+  background-image: url('../images/region bg.png');
+}
+#objetivo .container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+#objetivo h2 {
+  font-size: 3rem;
+  font-family: Roboto-bold;
+  font-weight: 700;
+}
+#objetivo h2 span:nth-of-type(1) {
+  background: var(--branco);
+}
+#objetivo h2 span:nth-of-type(2) {
+  color: var(--amarelo);
+}
+#objetivo p {
+  font-size: 1.4rem;
+  font-family: roboto-lightitalic;
+  background: white;
+  padding: 32px 40px;
+}
+
+/* ===== CONTATO ===== */
+
+#contact .text h3 {
+  font-size: var(--second);
+  font-family: roboto-bold;
+}
+#contact .text h3 span {
+  color: var(--azul);
+  font-family: roboto-bold;
+}
+#contact .text p {
+  font-size: var(--third);
+  font-family: roboto-light;
+}
+form {
+  padding: 50px 10px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 3rem;
+}
+input {
+  border-radius: 11px;
+  border: 1px solid #d6c0c0;
+  outline: none;
+  color: #cecece;
+  padding: 11px 30px;
+  font-size: var(--med);
+}
+::placeholder {
+  color: #cecece;
+}
+textarea {
+  border-radius: 11px;
+  border: 1px solid #d6c0c0;
+  outline: none;
+  font-size: var(--third);
+  color: #cecece;
+  padding: 11px 30px;
+}
+textarea::placeholder {
+  color: #cecece;
+  font-size: var(--med);
+}
+input[type='submit'] {
+  height: 63px;
+  background: var(--azul);
+  color: var(--branco);
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  background: var(--preto);
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--branco);
+}
+
+footer img {
+  width: 84px;
+}
+
+footer .wpp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
