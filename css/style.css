@@ -26,6 +26,7 @@ html {
 
 img {
   width: 100%;
+  display: block;
 }
 a {
   text-decoration: none;
@@ -276,4 +277,11 @@ footer .wpp {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media (max-width: 1250px) {
+  #about-us .box,
+  #how .container {
+    grid-template-columns: 1fr;
+  }
 }
