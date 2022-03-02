@@ -11,11 +11,11 @@
   --branco: #fff;
 
   /* TEXT SIZE */
-  --first: 4.5rem;
-  --second: 3rem;
+  --first: 2.5rem /*4.5rem*/;
+  --second: 1.5rem /*3rem*/;
   --med: 2.25rem;
-  --sec-med: 2rem;
-  --third: 1.5rem;
+  --sec-med: 1.8rem;
+  --third: 1.2rem;
 }
 
 html {
@@ -188,7 +188,7 @@ ul {
   height: 100%;
 }
 #objetivo h2 {
-  font-size: 3rem;
+  font-size: var(--first);
   font-family: Roboto-bold;
   font-weight: 700;
 }
@@ -199,7 +199,7 @@ ul {
   color: var(--amarelo);
 }
 #objetivo p {
-  font-size: 1.4rem;
+  font-size: var(--third);
   font-family: roboto-lightitalic;
   background: white;
   padding: 32px 40px;
@@ -231,7 +231,7 @@ input {
   outline: none;
   color: #cecece;
   padding: 11px 30px;
-  font-size: var(--med);
+  font-size: var(--third);
 }
 ::placeholder {
   color: #cecece;
@@ -246,7 +246,6 @@ textarea {
 }
 textarea::placeholder {
   color: #cecece;
-  font-size: var(--med);
 }
 input[type='submit'] {
   height: 63px;
